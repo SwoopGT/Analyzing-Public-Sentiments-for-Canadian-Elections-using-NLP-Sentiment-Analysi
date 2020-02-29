@@ -1,4 +1,4 @@
-# Twitter Sentiment Analysis
+# Analyzing-Public-Sentiments-for-Canadian-Elections-using-NLP-Sentiment-Analysis
 
 ## 1. Introduction
 
