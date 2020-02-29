@@ -42,7 +42,7 @@ Twitter Data: Data pertaining to the users is obtained using Tweepy API.
 
 The following steps were employed to obtain the required results:
 
-### 5.1 Importing Necessary Libraries
+#### 5.1 Importing Necessary Libraries
 
 The first step is to import the necessary libraries and packages. 
 Numpy – For numerical calculations
@@ -55,72 +55,71 @@ Tweepy – Twitter API library to fetch tweets
 
 </br>
 
-### 5.2 Loading Twitter Credentials
+#### 5.2 Loading Twitter Credentials
 This step involves the loading of a python file consisting of private twitter developer account credentials. This is a required step to fetch the tweets.
 
 </br>
 
-### 5.3 Setting up Authorization and API objects
+#### 5.3 Setting up Authorization and API objects
 After the credentials are loaded the API object is created to be used for fetching the tweets depending upon the query and number of tweets required.
 
 </br>
 
-### 5.4 Defining the required functions
+#### 5.4 Defining the required functions
 
 The following functions were created:
 
-Fetch tweets – Using the API object to fetch tweets and filter retweets. Takes input as the search query and number of tweets required.
+**Fetch tweets** – Using the API object to fetch tweets and filter retweets. Takes input as the search query and number of tweets required.
+
+**Clean tweets** – The function takes the tweets stored in public tweets and removes the punctuations and special characters using regular expressions.
 
 
-Clean tweets – The function takes the tweets stored in public tweets and removes the punctuations and special characters using regular expressions.
+**Sentiment NLTK** – This function obtains the sentiment of the tweet passed using the NLTK library.
 
 
-Sentiment NLTK – This function obtains the sentiment of the tweet passed using the NLTK library.
+**Sentiment TextBlob** - This function obtains the sentiment of the tweet passed using the TextBlob library.
 
 
-Sentiment TextBlob - This function obtains the sentiment of the tweet passed using the TextBlob library.
-
-
-Display details – The function is used to display details related to the user who tweeted the tweet. 
+**Display details** – The function is used to display details related to the user who tweeted the tweet. 
 
 
 The details displayed are as follows: 
 
 Tweet text , timestamp, user-id, screen name of the user, location, number of followers, number of tweets by the user, number of retweets on the tweeted tweet, sentiment predicted by NLTK and TextBlob and the user weights calculated by NLTK and TextBlob.
 
-Tweet scores – This function assigns a user particular score depending upon the number of tweets put forth by the user.
+**Tweet scores** – This function assigns a user particular score depending upon the number of tweets put forth by the user.
 
-Follower scores – This function assigns a user particular score depending upon the number of followers the user has.
+**Follower scores** – This function assigns a user particular score depending upon the number of followers the user has.
 
-Retweet scores – This function assigns a score to the user depending upon the number of retweets the tweet tweeted by the user obtained.
+**Retweet scores** – This function assigns a score to the user depending upon the number of retweets the tweet tweeted by the user obtained.
 
-Weight Assignment Blob – This function calculates the user weights for Text Blob analysis.
+**Weight Assignment Blob** – This function calculates the user weights for Text Blob analysis.
 This function has 3 parts depending upon the polarity – 
 Calculate the number of positive, negative and neutral tweets according to TextBlob
 Calculate the user weight = (Tweet score + Follower score + Retweet score)/3
 Calculate the total weight = Calculate the total weight of all users for the analysis
 
-Weight Assignment NLTK – This function calculates the user weights for NLTK analysis.
+**Weight Assignment NLTK** – This function calculates the user weights for NLTK analysis.
 This function has 3 parts depending upon the scores – 
 Calculate the number of positive, negative and neutral tweets according to NLTK
 Calculate the user weight = (Tweet score + Follower score + Retweet score)/3
 Calculate the total weight = Calculate the total weight of all users for the analysis
 
-Overall sentiment Blob – This function calculates the overall sentiment according to TextBlob.
-This function has 2 parts – 
+**Overall sentiment Blob** – This function calculates the overall sentiment according to TextBlob.
+This function has 2 parts – **
 Display the results of Text Blob analysis – Total positive and negative weights and the number of positive, negative and neutral tweets
 Overall sentiment – To display the overall sentiment according to Text Blob analysis
 
-Overall sentiment NLTK– This function calculates the overall sentiment according to NLTK.
+**Overall sentiment NLTK**– This function calculates the overall sentiment according to NLTK.
 This function has 2 parts – 
 Display the results of NLTK analysis – Total positive and negative weights and the number of positive, negative and neutral > > tweets
 Overall sentiment – To display the overall sentiment according to NLTK analysis
 
-Total Tweets – This function calculates the total tweets analyzed for a particular query
+**Total Tweets** – This function calculates the total tweets analyzed for a particular query
 
-Visualize Blob – This function is used to visualize the entire analysis using Text Blob in the form of a Pie Chart.
+**Visualize Blob** – This function is used to visualize the entire analysis using Text Blob in the form of a Pie Chart.
 
-Visualize NLTK – This function is used to visualize the entire analysis using NLTK in the form of a Pie Chart.
+**Visualize NLTK** – This function is used to visualize the entire analysis using NLTK in the form of a Pie Chart.
 
 </br>
 
