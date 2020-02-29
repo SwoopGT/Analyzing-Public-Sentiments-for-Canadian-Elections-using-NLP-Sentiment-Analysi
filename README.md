@@ -123,37 +123,37 @@ Overall sentiment – To display the overall sentiment according to NLTK analysi
 
 </br>
 
-### 5.5 Fetching the tweets
+#### 5.5 Fetching the tweets
 
 This step involves the input of the query to be searched and the number of tweets to fetch.
 
 </br>
 
-### 5.6 Initialize the variables
+#### 5.6 Initialize the variables
 
 This step involves assigning counters to zero. The counters in this case are positive tweets, negative tweets, neutral tweets, user weight, and total weight negative and positive for both NLTK and TextBlob. 
 
 </br>
 
-### 5.7 Performing the total analysis
+#### 5.7 Performing the total analysis
 
 This step involves calling the above defined functions, obtaining the tweets and the details regarding it.
 
 </br>
 
-### 5.8 Obtaining the overall sentiments
+#### 5.8 Obtaining the overall sentiments
 
 This step involves calling the overall sentiments function and obtaining the sentiment based on TextBlob and NLTK results.
 
 </br>
 
-### 5.9 Obtaining total amount of tweets 
+#### 5.9 Obtaining total amount of tweets 
 
 This step involves calling the total tweets function and obtaining the total number of tweets.
 
 </br>
 
-### 5.10 Visualization
+#### 5.10 Visualization
 
 This step involves calling the visualize functions and obtaining the pie charts for the analysis using both the libraries.
 
@@ -161,7 +161,7 @@ This step involves calling the visualize functions and obtaining the pie charts 
 
 ## 6. Discussion
 
-### 6.1. Learnings from the project
+#### 6.1. Learnings from the project
 
 The following tools and things were learnt during the entire analysis – 
 1. Twitter API – Tweepy hands on experience
@@ -170,7 +170,7 @@ The following tools and things were learnt during the entire analysis –
 
 </br>
 
-### 6.2 Problems faced during the analysis
+#### 6.2 Problems faced during the analysis
 
 1. The initial problem faced was inclusion of twitter credentials for the developer account. It was required that the credentials remain private to prevent misuse when uploaded on github.
 This problem was solved by creating a python file consisting only credentials and then loading it into google collab. The credentials are read in the back end and are not mentioned anywhere in the script.
@@ -180,7 +180,7 @@ Both of these libraries give the sentiment of the tweet passed to it but the sco
 
 </br>
 
-### 6.3 Limitations
+#### 6.3 Limitations
 
 Although it is not possible to manually label each and every tweet with its associated sentiment i.e. Positive, Negative and Neutral, a small sample of the tweet was selected. It was found that most of the tweets were labelled according to the values provided by lexicons of each libraries. But the libraries failed to take in to consideration sarcasm. This presented a problem statement for future work where the problem statement could be framed like – 
 How can these libraries take in to consideration the effect of sarcasm on sentiment?
